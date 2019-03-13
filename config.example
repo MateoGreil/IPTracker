@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+fromAddr = 'your.address@gmail.com'
+toAddr = ['your.address@gmail.com', 'second.address@mail.fr']
+myPassword = r"yourpass"
+ipStorePath = "/home/user/IPTracker/.ip"
