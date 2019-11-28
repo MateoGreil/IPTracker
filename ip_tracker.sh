@@ -2,6 +2,7 @@
 
 PUBLIC_IP_FILE=/home/mat/IPTracker/.ip
 PUBLIC_IP=`wget http://ipecho.net/plain -O - -q ; echo`
+NOW=date +"%m-%d-%Y %H:%M:%S"
 
 read last_ip < $PUBLIC_IP_FILE
 if [ $last_ip != $PUBLIC_IP ]
@@ -11,5 +12,5 @@ then
 
 	echo $PUBLIC_IP > $PUBLIC_IP_FILE
 else
-	echo 'Pas de difference'
+	echo $NOW 'Pas de difference'
 fi
